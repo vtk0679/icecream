@@ -1,0 +1,35 @@
+// *
+// * В этом файле перечислен начальный сброс глобальных стилей по селекторам тегов
+// *
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+link {
+  text-decoration: none;
+  color: inherit;
+}
+
+list {
+  list-style: none;
+}
+
+svg {
+  fill: currentColor;
+}
