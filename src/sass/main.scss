@@ -3,5 +3,10 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+@import './src/sass/vendors/fonts';
+@import './src/sass/vendors/normalize';
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/common';
