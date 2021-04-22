@@ -3,10 +3,7 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-
-  @media screen and (max-width: var(--mobile-min)) {
-    width: 320px;
-  }
+  min-width: 320px;
 
   @media screen and (min-width: var(--mobile)) {
     width: 480px;
