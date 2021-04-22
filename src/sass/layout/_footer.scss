@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--background-accent);
+}
+
+.footer__title {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: var(--main-letter-spacing);
+  text-transform: uppercase;
+
+  color: var(--text-color-pink);
+}
+
+.footer__title--accent {
+  font-size: 34px;
+  line-height: 1.15;
+  color: var(--text-color-title);
+}
