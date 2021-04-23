@@ -48,6 +48,11 @@
 
   background-color: var(--background-icon);
 
+  &:hover,
+  &:focus {
+    background-color: var(--text-color-title);
+  }
+
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -64,9 +69,14 @@
   line-height: 1.52;
   letter-spacing: 0.02em;
 
-  padding: 25px 70px;
+  padding: 25px 20px;
 
   color: var(--text-color-accent);
 
   border-top: 1px solid var(--background-reviews);
+}
+
+.copyright__text {
+  width: 150px;
+  margin: 0 auto;
 }
