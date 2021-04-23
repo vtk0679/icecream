@@ -5,17 +5,17 @@
   padding-right: 20px;
   min-width: 320px;
 
-  @media screen and (min-width: var(--mobile)) {
+  @media screen and (min-width: $mobile) {
     width: 480px;
   }
 
-  @media screen and (min-width: var(--tablet-min)) {
+  @media screen and (min-width: $tablet-min) {
     width: 768px;
     padding-left: 34px;
     padding-right: 34px;
   }
 
-  @media screen and (min-width: var(--desktop-min)) {
+  @media screen and (min-width: $desktop-min) {
     width: 1090px;
     padding-left: 20px;
     padding-right: 20px;
