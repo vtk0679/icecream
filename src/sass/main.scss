@@ -3,8 +3,8 @@
  * Все паршалы подключаются сюда.
  */
 
-@import './src/sass/vendors/fonts';
-@import './src/sass/vendors/normalize';
+@import './vendors/fonts';
+@import './vendors/normalize';
 
 @import './utils/variables';
 @import './utils/visually-hidden';
