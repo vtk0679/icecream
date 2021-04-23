@@ -12,6 +12,8 @@
 @import './base/common';
 @import './base/container';
 
+@import './src/sass/components/modal-btn';
+
 @import './layout/about';
-@import './layout/contacts';
+@import './src/sass/layout/contacts';
 @import './layout/footer';
