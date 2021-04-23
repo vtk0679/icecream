@@ -24,9 +24,21 @@
   margin-top: 17px;
 }
 
+.footer__contacts {
+  font-weight: 700;
+  font-size: 12px;
+  text-align: end;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 43px;
+}
+
 .footer__socials {
   display: flex;
   justify-content: flex-end;
+
+  margin-bottom: 46px;
 }
 
 .footer__link {
@@ -39,4 +51,22 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+.footer__tel {
+  color: var(--text-color-title);
+}
+
+.footer__copyright {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.02em;
+
+  padding: 25px 70px;
+
+  color: var(--text-color-accent);
+
+  border-top: 1px solid var(--background-reviews);
 }
