@@ -1,0 +1,181 @@
+.header-section {
+    background-color: #FFB8CA;
+}
+
+.header-button {
+    display: none;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-list {
+    display: none;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 37px;
+    padding-bottom: 84px;
+}
+
+.button-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.header-list__item {
+    margin-right: 35px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header-list__item {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #FFFFFF;
+}
+
+.header-button {
+    width: 159px;
+    height: 44px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #D41443;
+}
+
+.button-burger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.hero-title {
+    width: 277px;
+    font-family: Titan One;
+    font-weight: 400;
+    padding-bottom: 25px;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.hero-title__subtitle {
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 90.5%;
+    color: #D41443;
+}
+
+.hero-button {
+    display: flex;
+    padding-bottom: 56px;
+}
+
+.hero-button__product {
+    width: 104px;
+    height: 40px;
+    border: none;
+    background: #D41443;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.hero-button__made {
+    width: 138px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.hero-product {
+    display: flex;
+    padding-bottom: 45px;
+}
+
+.hero-product__milk {
+    width: 188px;
+    height: 191px;
+}
+
+.hero-product-about {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 200px;
+}
+
+.hero-product-about__text {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.hero-product-about__arrow {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+}
+
+.hero-product-about__arrow-svg {
+    width: 12px;
+    height: 12px;
+    color: var(--background-dots-reviews);
+}
+
+.icecream-image__ice {
+    position: absolute;
+    left: 594px;
+    top: 108px;
+}
+
+.icecream-image__tasty {
+    position: absolute;
+    left: 878px;
+    top: 433px;
+}
+
+.icecream-image__ellipse {
+    border-radius: 50%;
+    width: 50%;
+    color: var(--text-color-pink);
+}
+
+@media screen and (min-width: 768px) {
+    .header-button {
+        display: block;
+    }
+    .button-burger {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header-list {
+        display: flex;
+    }
+}
