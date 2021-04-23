@@ -1,9 +1,11 @@
 // *
 // * Все переменные с цветом, шрифтом, трансформациями и т.д. добавляем сюда:
 // *
-
 :root {
+<<<<<<< Updated upstream
   :root {
+=======
+>>>>>>> Stashed changes
     --main-white-color: #ffffff;
     --main-black-color: #000000;
     --background-accent: #fff5f6;
@@ -18,6 +20,7 @@
     --background-button: #d41342;
     --background-icon-reviews: #d9d9d9;
     --background-icon-reviews-accent: #d31342;
+<<<<<<< Updated upstream
     --background-icon: #c7133e;
     --text-color-title: #d41443;
     --text-color-pink: #ffa5ba;
@@ -28,3 +31,20 @@
     --main-letter-spacing: 0.04em;
   }
 }
+=======
+    --background-dots-reviews: #c7133e;
+    --text-color-title: #d41443;
+    --text-color-pink: #ffa5ba;
+    --text-color-accent: #907e82;
+    --main-font: 'DM Sans', sans-serif;
+    --secondary-font: 'Titan One', cursive;
+    --main-letter-spacing: 0.04em;
+}
+
+$mobile-min: 320px;
+$mobile: 480px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1279px;
+$desktop-min: 1280px;
+>>>>>>> Stashed changes

@@ -1,0 +1,127 @@
+.header-section {
+    background-color: #FFB8CA;
+}
+
+.header-button {
+    display: none;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-list {
+    display: none;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.header-list__item {
+    margin-right: 35px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header-list__item {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #FFFFFF;
+}
+
+.header-button {
+    width: 159px;
+    height: 44px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #D41443;
+}
+
+.button-burger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.hero-title {
+    width: 277px;
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.hero-title__subtitle {
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 90.5%;
+    color: #D41443;
+}
+
+.hero-button {
+    display: flex;
+}
+
+.hero-button__product {
+    width: 104px;
+    height: 40px;
+    border: none;
+    background: #D41443;
+    border-radius: 20px;
+}
+
+.hero-button__made {
+    width: 138px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.hero-text {
+    width: 200px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .header-button {
+        display: block;
+    }
+    .button-burger {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header-list {
+        display: flex;
+    }
+}
