@@ -1,5 +1,6 @@
 .header-section {
     background-color: #FFB8CA;
+    margin-bottom: 63.5px;
 }
 
 .header-button {
@@ -109,7 +110,7 @@
 
 .hero-product {
     display: flex;
-    padding-bottom: 45px;
+    padding-bottom: 39px;
 }
 
 .hero-product__milk {
@@ -147,6 +148,10 @@
     color: var(--background-dots-reviews);
 }
 
+.icecream-image {
+    display: none;
+}
+
 .icecream-image__ice {
     position: absolute;
     left: 594px;
@@ -155,14 +160,55 @@
 
 .icecream-image__tasty {
     position: absolute;
-    left: 878px;
+    right: 109px;
     top: 433px;
 }
 
 .icecream-image__ellipse {
-    border-radius: 50%;
-    width: 50%;
+    display: block;
+    // border-radius: 50%;
+    width: 50px;
     color: var(--text-color-pink);
+}
+
+.hero-cafes {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 72px;
+    right: 115px;
+    top: 156px;
+}
+
+.hero-cafes__number,
+.hero-food__number {
+    display: block;
+    text-align: right;
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 53px;
+    color: var(--text-color-title);
+}
+
+.hero-cafes__text,
+.hero-food__text {
+    display: block;
+    text-align: right;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--main-white-color);
+}
+
+.hero-food {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 92px;
+    right: 115px;
+    top: 251px;
 }
 
 @media screen and (min-width: 768px) {
@@ -177,5 +223,8 @@
 @media screen and (min-width: 1280px) {
     .header-list {
         display: flex;
+    }
+    .icecream-image {
+        display: block;
     }
 }
