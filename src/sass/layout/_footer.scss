@@ -10,10 +10,32 @@
   text-transform: uppercase;
 
   color: var(--text-color-pink);
+
+  margin-bottom: 43px;
 }
 
 .footer__title--accent {
   font-size: 34px;
   line-height: 1.15;
   color: var(--text-color-title);
+
+  margin-top: 17px;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+
+  background-color: var(--background-icon);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
