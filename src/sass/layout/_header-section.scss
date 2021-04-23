@@ -165,10 +165,14 @@
 }
 
 .icecream-image__ellipse {
+    position: absolute;
+    top: 52px;
+    right: 257px;
     display: block;
-    // border-radius: 50%;
-    width: 50px;
-    color: var(--text-color-pink);
+    border-radius: 50%;
+    width: 538px;
+    height: 538px;
+    background-color: var(--text-color-pink);
 }
 
 .hero-cafes {
@@ -188,6 +192,7 @@
     font-weight: 400;
     font-size: 46px;
     line-height: 53px;
+    z-index: 60;
     color: var(--text-color-title);
 }
 
@@ -211,6 +216,26 @@
     top: 251px;
 }
 
+.hero-cafes__ellipse {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-white-color);
+}
+
+.hero-food__ellipse {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-white-color)
+}
+
 @media screen and (min-width: 768px) {
     .header-button {
         display: block;
@@ -223,6 +248,7 @@
 @media screen and (min-width: 1280px) {
     .header-list {
         display: flex;
+        z-index: 50;
     }
     .icecream-image {
         display: block;
