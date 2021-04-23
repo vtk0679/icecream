@@ -25,11 +25,11 @@
   --main-font: 'DM Sans', sans-serif;
   --secondary-font: 'Titan One', cursive;
   --main-letter-spacing: 0.04em;
-
-  --mobile-min: 320px;
-  --mobile: 480px;
-  --mobile-max: 767px;
-  --tablet-min: 768px;
-  --tablet-max: 1279px;
-  --desktop-min: 1280px;
 }
+
+$mobile-min: 320px;
+$mobile: 480px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1279px;
+$desktop-min: 1280px;
