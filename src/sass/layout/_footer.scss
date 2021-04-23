@@ -1,8 +1,14 @@
 .footer {
   background-color: var(--background-accent);
+
+  // временный падинг для удобства
+
+  padding-top: 40px;
 }
 
 .footer__title {
+  width: 240px;
+
   font-family: var(--secondary-font);
   font-size: 18px;
   line-height: 1.17;
@@ -12,6 +18,15 @@
   color: var(--text-color-pink);
 
   margin-bottom: 43px;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+
+    margin-bottom: 0;
+
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 
 .footer__title--accent {
@@ -22,6 +37,10 @@
   color: var(--text-color-title);
 
   margin-top: 17px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
 }
 
 .footer__contacts {
@@ -32,6 +51,12 @@
   letter-spacing: 0.02em;
 
   margin-bottom: 43px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+
+    margin-bottom: 0;
+  }
 }
 
 .footer__socials {
@@ -56,6 +81,11 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .footer__tel {
@@ -74,9 +104,27 @@
   color: var(--text-color-accent);
 
   border-top: 1px solid var(--background-reviews);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
 }
 
 .copyright__text {
   width: 150px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 90px;
+  }
 }
