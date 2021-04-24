@@ -94,7 +94,10 @@
   &:hover,
   &:focus {
     background-color: var(--text-color-title);
+    transform: rotate(360deg);
   }
+
+  transition: transform 400ms linear, background-color 400ms linear;
 
   &:not(:last-child) {
     margin-right: 30px;
