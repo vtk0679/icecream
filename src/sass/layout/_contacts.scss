@@ -27,9 +27,6 @@
 
     @media screen and (min-width: $desktop-min) {
       top: 168px;
-    }
-
-    @media screen and (min-width: $desktop-min) {
       background-image: url('./../images/contacts/desktop/x1/contacts-desktop.png');
       background-size: contain;
       background-repeat: no-repeat;
@@ -48,9 +45,16 @@
 
     @media screen and (min-width: $tablet-min) {
       margin-bottom: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: -20px;
+      margin-left: -20px;
     }
 
     @media screen and (min-width: $desktop-min) {
+      margin-top: -30px;
+      margin-left: -30px;
       margin-bottom: 85px;
     }
   }
@@ -75,11 +79,22 @@
       background: var(--background-green);
     }
 
+    @media screen and (max-width: $mobile-max) {
+      margin: 0 auto;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
     @media screen and (max-width: $tablet-max) {
       letter-spacing: normal;
     }
 
     @media screen and (min-width: $tablet-min) {
+      margin-top: 20px;
+      margin-left: 20px;
+      flex-basis: calc(100% / 3 - 20px);
       padding: 50px 30px;
       font-size: 14px;
     }
@@ -88,6 +103,9 @@
       padding: 60px 44px;
       max-width: 330px;
       font-size: 16px;
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc(100% / 3 - 30px);
     }
   }
 
@@ -132,10 +150,18 @@
     @media screen and (min-width: $tablet-min) {
       line-height: 1.66;
       margin-bottom: 30px;
+
+      &:after {
+        margin-top: 30px;
+      }
     }
     @media screen and (min-width: $desktop-min) {
       line-height: 1.83;
       margin-bottom: 32px;
+
+      &:after {
+        margin-top: 32px;
+      }
     }
 
     &:after {
@@ -145,52 +171,6 @@
       height: 1px;
       background-color: var(--background-reviews);
       margin-top: 25px;
-
-      @media screen and (min-width: $tablet-min) {
-        margin-top: 30px;
-      }
-
-      @media screen and (min-width: $desktop-min) {
-        margin-top: 32px;
-      }
-    }
-  }
-
-  @media screen and (max-width: $mobile-max) {
-    &__item {
-      margin: 0 auto;
-    }
-
-    &__item:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-
-  @media screen and (min-width: $tablet-min) {
-    &__list {
-      display: flex;
-      justify-content: center;
-      margin-top: -20px;
-      margin-left: -20px;
-    }
-
-    &__item {
-      margin-top: 20px;
-      margin-left: 20px;
-      flex-basis: calc(100% / 3 - 20px);
-    }
-  }
-
-  @media screen and (min-width: $desktop-min) {
-    &__list {
-      margin-top: -30px;
-      margin-left: -30px;
-    }
-
-    &__item {
-      margin-top: 30px;
-      margin-left: 30px;
-      flex-basis: calc(100% / 3 - 30px);
     }
   }
 }
