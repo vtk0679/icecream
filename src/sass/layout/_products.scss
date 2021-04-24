@@ -1,7 +1,12 @@
+.container {
+    outline: none;;
+}
+.products {
+    margin-top: 127px;
+}
 .products-wrapper {
     text-align: center;
-    padding-bottom: 144px;
-    padding-top: 127px;
+    margin-bottom: 144px;
 }
 .products-label {
     font-family: var(--secondary-font);
@@ -33,6 +38,8 @@
 }
 .products-list__img {
     position: absolute;
+    margin: 0 auto;
+    top: -120px;
     width: 249px;
     height: 252px;
 }
@@ -71,10 +78,11 @@
     color: #FFFFFF;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 30px;
+    margin-bottom: 40px;
 }
 .products-list__btn {
     display: flex;
+    position: relative;
     margin: 0 auto;
     width: 40px;
     height: 40px;
@@ -82,12 +90,21 @@
     border: 0;
     border-radius: 50%;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus { background-color: #ECEBEB; }
 }
 .product-list__icon_btn {
+    margin-top: 10px;
     height: 15px;
     fill: var(--background-icon-reviews-accent);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
+    .products-list__img {
+        left: 16px;
+    }
+}
+@media screen and (min-width: 768px) {
     .products-label {
         font-size: 26px;
         line-height: 30px;
@@ -96,23 +113,10 @@
         font-size: 48px;
         line-height: 55px;
     }
-    .products-list__wrapper {
-        width: 280px;
-        height: 485px;
-    }
-}
-@media screen and (min-width: 768px) {
-    .products-label {
-        font-size: 30px;
-        line-height: 34px;
-    }
-    .products-title {
-        font-size: 58px;
-        line-height: 66px;
-    }
     .products-list__img {
         width: 220px;
         height: 226px;
+        top: -100px;
     }
     .products-list__wrapper {
         width: 220px;
@@ -136,9 +140,21 @@
     }
 }
 @media screen and (min-width: 1280px) {
+    .products-wrapper {
+        margin-bottom: 259px;
+    }
+    .products-label {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .products-title {
+        font-size: 58px;
+        line-height: 66px;
+    }
     .products-list__img {
         width: 335px;
         height: 335px;
+        top: -210px;
     }
     .products-list__wrapper {
         width: 329px;
@@ -152,6 +168,7 @@
         font-size: 16px;
         padding-left: 44px;
         padding-right: 44px;
+        margin-bottom: 60px;
     }
     .products-list {
         display: flex;
