@@ -3,12 +3,22 @@
  * Все паршалы подключаются сюда.
  */
 
-@import './layout/header-section';
-@import './src/sass/vendors/fonts';
-@import './src/sass/vendors/normalize';
+
+@import './vendors/fonts';
+@import './vendors/normalize';
+
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './base/common';
 @import './base/container';
+
+@import './components/modal-btn';
+
+@import './layout/header-section';
+@import './layout/products';
+@import './layout/advantages';
 @import './layout/about';
+@import './layout/contacts';
 @import './layout/footer';
+
+
