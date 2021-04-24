@@ -67,6 +67,10 @@
     padding: 0;
 }
 
+.container-hero {
+    position: relative;
+}
+
 .hero-title {
     width: 277px;
     font-family: Titan One;
@@ -154,20 +158,20 @@
 
 .icecream-image__ice {
     position: absolute;
-    left: 594px;
-    top: 108px;
+    right: 335px;
+    bottom: 0;
 }
 
 .icecream-image__tasty {
     position: absolute;
-    right: 109px;
-    top: 433px;
+    right: 35px;
+    bottom: 0;
 }
 
 .icecream-image__ellipse {
     position: absolute;
-    top: 52px;
-    right: 257px;
+    bottom: 75px;
+    right: 152px;
     display: block;
     border-radius: 50%;
     width: 538px;
@@ -180,8 +184,8 @@
     display: flex;
     flex-direction: column;
     width: 72px;
-    right: 115px;
-    top: 156px;
+    right: 35px;
+    bottom: 432px;
 }
 
 .hero-cafes__number,
@@ -212,8 +216,8 @@
     display: flex;
     flex-direction: column;
     width: 92px;
-    right: 115px;
-    top: 251px;
+    right: 35px;
+    bottom: 341px;
 }
 
 .hero-cafes__ellipse {
