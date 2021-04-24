@@ -9,6 +9,7 @@
 
 @import './utils/variables';
 @import './utils/visually-hidden';
+
 @import './base/common';
 @import './base/container';
 
@@ -16,9 +17,11 @@
 
 @import './layout/header-section';
 @import './layout/products';
-@import './layout/advantages';
 @import './layout/about';
+@import './layout/advantages';
+@import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
+
 
 
