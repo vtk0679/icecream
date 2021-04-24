@@ -17,11 +17,15 @@
     display: none;
 }
 
+.link-current {
+    color: var(--text-color-title);
+}
+
 .container-header {
     display: flex;
     justify-content: space-between;
     padding-top: 37px;
-    padding-bottom: 84px;
+    padding-bottom: 137px;
 }
 
 .button-section {
@@ -31,6 +35,8 @@
 
 .logo {
     display: flex;
+    width: 199px;
+    height: 50px;
 }
 
 .header-list__item {
@@ -84,6 +90,8 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    z-index: 15;
+    position: relative;
 }
 
 .hero-title__subtitle {
@@ -93,11 +101,14 @@
     line-height: 96.5%;
     color: #D41443;
     text-transform: uppercase;
+    z-index: 999;
 }
 
 .hero-button {
     display: flex;
     padding-bottom: 160px;
+    z-index: 100;
+    position: relative;
 }
 
 .hero-button__product {
@@ -171,31 +182,29 @@
     color: var(--background-dots-reviews);
 }
 
-.icecream-image {
-    display: none;
-}
-
 .icecream-image__ice {
     position: absolute;
-    right: 335px;
+    width: 171px;
+    height: 410px;
+    left: 117px;
     bottom: 0;
-}
-
-.icecream-image__tasty {
-    position: absolute;
-    right: 35px;
-    bottom: 0;
+    z-index: 10;
 }
 
 .icecream-image__ellipse {
     position: absolute;
     bottom: 75px;
-    right: 152px;
+    left: 36px;
     display: block;
     border-radius: 50%;
-    width: 538px;
-    height: 538px;
+    width: 344px;
+    height: 344px;
     background-color: var(--text-color-pink);
+    z-index: 10;
+}
+
+.icecream-image__tasty {
+    display: none;
 }
 
 .hero-cafes {
@@ -267,6 +276,8 @@
     }
     .button-burger {
         margin-right: 30px;
+        position: relative;
+        z-index: 15;
     }
     .hero-title {
         width: 162px;
@@ -287,14 +298,34 @@
     .hero-cafes {
         display: flex;
         width: 43px;
-        right: 35px;
+        left: 682px;
         bottom: 261px;
     }
     .hero-food {
         display: flex;
         width: 92px;
-        right: 35px;
+        left: 635px;
         bottom: 205px;
+    }
+    .icecream-image__ice {
+        width: 143px;
+        height: 336px;
+        left: 378px;
+    }
+    .icecream-image__ellipse {
+        bottom: 46px;
+        left: 307px;
+        width: 324px;
+        height: 322px;
+    }
+    .icecream-image__tasty {
+        display: block;
+        width: 168px;
+        height: 133px;
+        position: absolute;
+        left: 566px;
+        bottom: 0;
+        z-index: 15;
     }
 }
 
@@ -318,8 +349,11 @@
         font-size: 58px;
         line-height: 90.5%;
     }
+    .button-burger {
+        display: none;
+    }
     .hero-button {
-        padding-bottom: 25px;
+        padding-bottom: 56px;
     }
     .hero-button__product {
         width: 104px;
@@ -361,13 +395,13 @@
     }
     .hero-cafes {
         width: 72px;
-        right: 35px;
+        left: 1006px;
         top: 0;
     }
     .hero-food {
         display: flex;
         width: 92px;
-        right: 35px;
+        left: 987px;
         top: 92px;
     }
     .hero-cafes__number,
@@ -387,5 +421,21 @@
         right: -16px;
         width: 30px;
         height: 30px;
+    }
+    .icecream-image__ice {
+        width: 236px;
+        height: 557px;
+        left: 560px;
+    }
+    .icecream-image__ellipse {
+        bottom: 75px;
+        left: 440px;
+        width: 538px;
+        height: 538px;
+    }
+    .icecream-image__tasty {
+        width: 293px;
+        height: 232px;
+        left: 832px;
     }
 }
