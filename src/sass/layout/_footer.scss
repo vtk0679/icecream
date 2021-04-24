@@ -3,7 +3,11 @@
 
   // временный падинг для удобства
 
-  padding-top: 40px;
+  padding-top: 55px;
+
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 82px;
+  }
 }
 
 .footer__title {
