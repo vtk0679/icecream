@@ -3,8 +3,8 @@
  * Все паршалы подключаются сюда.
  */
 
-@import './src/sass/vendors/fonts';
-@import './src/sass/vendors/normalize';
+@import './vendors/fonts';
+@import './vendors/normalize';
 
 @import './utils/variables';
 @import './utils/visually-hidden';
@@ -12,6 +12,18 @@
 @import './base/common';
 @import './base/container';
 
-@import'./layout/gallery';
+
+@import './components/modal-btn';
+@import './components/backdrop';
+@import './components/modal-map';
+@import './components/modal-franchise';
+@import './components/modal__btn-close';
+
+@import './layout/header-section';
+@import './layout/products';
 @import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/contacts';
 @import './layout/footer';
