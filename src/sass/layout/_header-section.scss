@@ -67,6 +67,10 @@
     padding: 0;
 }
 
+.button-burger__icon {
+    fill: var(--background-button);
+}
+
 .container-hero {
     position: relative;
 }
@@ -141,7 +145,7 @@
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    width: 114px;
+    width: 121px;
 }
 
 .hero-product-about__text {
