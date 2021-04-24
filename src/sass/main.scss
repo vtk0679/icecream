@@ -3,6 +3,7 @@
  * Все паршалы подключаются сюда.
  */
 
+
 @import './vendors/fonts';
 @import './vendors/normalize';
 
@@ -11,8 +12,16 @@
 
 @import './base/common';
 @import './base/container';
-@import './layout/advantages';
-@import './layout/about';
-@import './layout/footer';
+
+@import './components/modal-btn';
+
+@import './layout/header-section';
 @import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
 @import './layout/reviews';
+@import './layout/contacts';
+@import './layout/footer';
+
+
+
