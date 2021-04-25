@@ -16,11 +16,11 @@
   .gallery_thumb {
     height: 122px;
     max-width: 480px;
-    background-image: url(./../images/gallery/tel/x1/gallery-tel.jpg);
+    background-image: url('./../images/gallery/tel/x1/gallery-tel.jpg');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(./../images/gallery/tel/x2/gallery-tel@2X.jpg);
+      background-image: url('./../images/gallery/tel/x2/gallery-tel@2X.jpg');
     }
   }
 }
@@ -32,11 +32,11 @@
   .gallery_thumb {
     height: 264px;
     max-width: 768px;
-    background-image: url(./../images/gallery/tablet/x1/gallery-tablet.jpg);
+    background-image: url('./../images/gallery/tablet/x1/gallery-tablet.jpg');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(./../images/gallery/tablet/x2/gallery-tablet@2X.jpg);
+      background-image: url('./../images/gallery/tablet/x2/gallery-tablet@2X.jpg');
     }
   }
 }
@@ -44,11 +44,11 @@
   .gallery_thumb {
     height: 430px;
     max-width: 1090px;
-    background-image: url(./../images/gallery/desktop/x1/gallery-desktop.jpg);
+    background-image: url('./../images/gallery/desktop/x1/gallery-desktop.jpg');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(./../images/gallery/desktop/x2/gallery-desktop@2X.jpg);
+      background-image: url('./../images/gallery/desktop/x2/gallery-desktop@2X.jpg');
     }
   }
 }
