@@ -8,7 +8,7 @@
         </a>
         <ul class="header-list">
             <li class="header-list__item list">
-                <a class="header-list__link link" href="#home">Home</a></li>
+                <a class="header-list__link link-current link" href="#home">Home</a></li>
             <li class="header-list__item list">
                 <a class="header-list__link link" href="#about-us">About us</a></li>
             <li class="header-list__item list">
@@ -28,7 +28,7 @@
         </div>
 
     </div>
-    <div class="container">
+    <div class="container container-hero">
         <h1 class="hero-title">ice cream made with <span class="hero-title__subtitle">passion</span></h1>
         <div class="hero-button">
             <button class="hero-button__product">Products</button>
@@ -46,15 +46,31 @@
                 <p class="hero-product-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 <button class="hero-product-about__arrow">
                 <svg class="hero-product-about__arrow-svg">
-                    <use href="images/sprite.svg#arrow_right"></use>
+                    <use href="images/sprite.svg#arrow_right_round"></use>
                 </svg>
             </button>
             </div>
         </div>
         <div class="icecream-image">
-            <span class="icecream-image__ellipse"></span>
-            <img class="icecream-image__ice" src="images/hero/desktop/x1/icecream-desktop.png" alt="icecream">
-            <img class="icecream-image__tasty" src="images/hero/desktop/x1/so-tasty-desktop.png" alt="tasty">
+            <div class="icecream-image__ellipse"></div>
+            <picture>
+                <source srcset="images/hero/tel/x1/icecream-tel.webp 1x, images/hero/tel/x2/icecream-tel@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
+                <source srcset="images/hero/tablet/x1/icecream-tablet.webp 1x, images/hero/tablet/x2/icecream-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/hero/desktop/x1/icecream-desktop.webp 1x, images/hero/desktop/x2/icecream-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/hero/tel/x1/icecream-tel.png 1x, images/hero/tel/x2/icecream-tel@2x.png 2x" media="(min-width: 320px)">
+                <source srcset="images/hero/tablet/x1/icecream-tablet.png 1x, images/hero/tablet/x2/icecream-tablet@2x.png 2x" media="(min-width: 768px)">
+                <source srcset="images/hero/desktop/x1/icecream-desktop.png 1x, images/hero/desktop/x2/icecream-desktop@2x.png 2x" media="(min-width: 1200px)">
+                <img class="icecream-image__ice" src="images/hero/desktop/x1/icecream-desktop.png" alt="image icecream">
+            </picture>
+            <picture>
+                <source srcset="images/hero/tablet/x1/so-tasty-tablet.webp 1x, images/hero/tablet/x2/so-tasty-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/hero/desktop/x1/so-tasty-desktop.webp 1x, images/hero/desktop/x2/so-tasty-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/hero/tablet/x1/so-tasty-tablet.png 1x, images/hero/tablet/x2/so-tasty-tablet@2x.png 2x" media="(min-width: 768px)">
+                <source srcset="images/hero/desktop/x1/so-tasty-desktop.png 1x, images/hero/desktop/x2/so-tasty-desktop@2x.png 2x" media="(min-width: 1200px)">
+                <img class="icecream-image__tasty" src="images/hero/tablet/x1/so-tasty-tablet.png" alt="tasty">
+            </picture>
+
+            <!-- <img class="icecream-image__tasty" src="images/hero/desktop/x1/so-tasty-desktop.png" alt="tasty"> -->
         </div>
         <p class="hero-cafes">
             <span class="hero-cafes__number">16</span>
@@ -64,7 +80,7 @@
         <p class="hero-food">
             <span class="hero-food__number">23</span>
             <span class="hero-food__text">food trucks</span>
-            <span class="hero-food__ellipse"></span>
+            <span class="hero-cafes__ellipse"></span>
         </p>
     </div>
 </header>
