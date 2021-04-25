@@ -64,7 +64,11 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
-    color: #D41443;
+    color: var(--text-color-title);
+}
+
+.header-button:hover {
+    background-color: var(--background-btn);
 }
 
 .button-burger {
@@ -83,6 +87,7 @@
 
 .hero-title {
     width: 218px;
+    text-transform: uppercase;
     font-family: Titan One;
     font-weight: 400;
     padding-bottom: 25px;
@@ -125,6 +130,10 @@
     color: var(--main-white-color);
 }
 
+.hero-button__product:hover {
+    background-color: var(--background-dots-reviews);
+}
+
 .hero-button__made {
     width: 82.8px;
     height: 24px;
@@ -136,6 +145,10 @@
     font-size: 8px;
     line-height: 1.25;
     color: var(--text-color-title);
+}
+
+.hero-button__made:hover {
+    background-color: var(--background-btn);
 }
 
 .hero-product {
@@ -174,11 +187,14 @@
     border-radius: 50%;
     border: none;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-product-about__arrow-svg {
-    width: 8px;
-    height: 9px;
+    width: 6px;
+    height: 6px;
     color: var(--background-dots-reviews);
 }
 
@@ -389,8 +405,8 @@
         height: 26px;
     }
     .hero-product-about__arrow-svg {
-        width: 12px;
-        height: 12px;
+        width: 9px;
+        height: 9px;
         color: var(--background-dots-reviews);
     }
     .hero-cafes {
