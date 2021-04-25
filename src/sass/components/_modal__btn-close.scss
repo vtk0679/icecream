@@ -23,3 +23,24 @@
         right: 95px;
         top: 30px;
     }
+    
+    .modal__btn-close-franchise {
+        display: inline-flex;
+        position: absolute;
+        left: 730px;
+        top: 60px;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: var(--main-white-color);
+        &:hover,
+        &:focus {
+            color: var(--text-color-title);
+            background-color: var(--background-btn);
+        }
+    }
