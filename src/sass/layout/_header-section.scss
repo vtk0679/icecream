@@ -1,6 +1,7 @@
 .header-section {
     background-color: #FFB8CA;
     margin-bottom: 63.5px;
+    overflow: hidden;
 }
 
 .header-button {
@@ -64,7 +65,11 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
-    color: #D41443;
+    color: var(--text-color-title);
+}
+
+.header-button:hover {
+    background-color: var(--background-btn);
 }
 
 .button-burger {
@@ -83,6 +88,7 @@
 
 .hero-title {
     width: 218px;
+    text-transform: uppercase;
     font-family: Titan One;
     font-weight: 400;
     padding-bottom: 25px;
@@ -125,6 +131,10 @@
     color: var(--main-white-color);
 }
 
+.hero-button__product:hover {
+    background-color: var(--background-dots-reviews);
+}
+
 .hero-button__made {
     width: 82.8px;
     height: 24px;
@@ -136,6 +146,10 @@
     font-size: 8px;
     line-height: 1.25;
     color: var(--text-color-title);
+}
+
+.hero-button__made:hover {
+    background-color: var(--background-btn);
 }
 
 .hero-product {
@@ -174,11 +188,14 @@
     border-radius: 50%;
     border: none;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-product-about__arrow-svg {
-    width: 8px;
-    height: 9px;
+    width: 6px;
+    height: 6px;
     color: var(--background-dots-reviews);
 }
 
@@ -201,6 +218,19 @@
     height: 344px;
     background-color: var(--text-color-pink);
     z-index: 10;
+    -webkit-animation: pulsing 8s infinite;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes pulsing {
+    0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5)
+    }
+    50% {
+        -webkit-transform: scale(1.0, 1.0);
+        transform: scale(1.0, 1.0);
+    }
 }
 
 .icecream-image__tasty {
@@ -272,7 +302,13 @@
         padding-bottom: 15px;
     }
     .header-button {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-button__icon {
+        margin-left: 12px;
+        fill: var(--text-color-title);
     }
     .button-burger {
         margin-right: 30px;
@@ -389,8 +425,8 @@
         height: 26px;
     }
     .hero-product-about__arrow-svg {
-        width: 12px;
-        height: 12px;
+        width: 9px;
+        height: 9px;
         color: var(--background-dots-reviews);
     }
     .hero-cafes {
