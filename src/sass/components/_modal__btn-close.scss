@@ -1,25 +1,32 @@
-.modal__btn-close {
-    display: inline-flex;
-    position: absolute;
-    right: 22px;
-    top: -45px;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--main-white-color);
-    &:hover,
-    &:focus {
-        color: var(--text-color-title);
-        background-color: var(--background-btn);
+    .modal__btn-close {
+        display: inline-flex;
+        position: absolute;
+        left: 182px;
+        top: -45px;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: var(--main-white-color);
+        &:hover,
+        &:focus {
+            color: var(--text-color-title);
+            background-color: var(--background-btn);
+        }
     }
-}
-
-.header-button .modal__btn-close {
-    right: 95px;
-    top: 30px;
-}
+    
+    .header-button .modal__btn-close {
+        right: 95px;
+        top: 30px;
+    }
+    
+    @media screen and (min-width: $tablet-min) {
+        .modal__btn-close {
+            right: 22px;
+            top: -45px;
+        }
+    }

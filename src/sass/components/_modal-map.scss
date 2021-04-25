@@ -1,11 +1,12 @@
 .modal {
     &__map {
-        position: relative;
         display: flex;
+        position: relative;
+        display: block;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        top: 50%;
+        top: 27%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
@@ -51,7 +52,6 @@
 }
 
 .header-list-modal {
-    display: flex;
     flex-direction: column;
 }
 
