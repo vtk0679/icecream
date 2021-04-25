@@ -1,54 +1,153 @@
-.gallery {
-  margin-left: auto;
-  margin-right: auto;
-}
-.gallery_thumb {
-  background-color: #ffa5ba;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-@media screen and (max-width: $mobile-max) {
-  .gallery {
-    padding-top: 48px;
-    padding-bottom: 40px;
-  }
-  .gallery_thumb {
-    height: 122px;
-    max-width: 480px;
-    background-image: url('./../images/gallery/tel/x1/gallery-tel.jpg');
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('./../images/gallery/tel/x2/gallery-tel@2x.jpg');
-    }
-  }
-}
-@media screen and (min-width: $tablet-min) {
-  .gallery {
+.gallery-section {
+  padding-top: 48px;
+  padding-bottom: 40px;
+
+  background-image: linear-gradient(
+    180deg,
+    var(--background-accent) 46%,
+    var(--main-white-color) 0
+  );
+
+  @media screen and (min-width: $tablet-min) {
     padding-top: 70px;
     padding-bottom: 60px;
+
+    background-image: linear-gradient(
+      180deg,
+      var(--background-accent) 44%,
+      var(--main-white-color) 0
+    );
   }
-  .gallery_thumb {
-    height: 264px;
-    max-width: 768px;
-    background-image: url('./../images/gallery/tablet/x1/gallery-tablet.jpg');
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('./../images/gallery/tablet/x2/gallery-tablet@2x.jpg');
-    }
+
+  @media screen and (min-width: $desktop-min) {
+    background-image: linear-gradient(
+      180deg,
+      var(--background-accent) 42%,
+      var(--main-white-color) 0
+    );
   }
 }
-@media screen and (min-width: $desktop-min) {
-  .gallery_thumb {
-    height: 430px;
-    max-width: 1090px;
-    background-image: url('./../images/gallery/desktop/x1/gallery-desktop.jpg');
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('./../images/gallery/desktop/x2/gallery-desktop@2x.jpg');
-    }
+
+.gallery {
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(7, 39px);
+  grid-template-rows: repeat(6, 18px);
+  grid-gap: 2px;
+
+  @media screen and (min-width: $tablet-min) {
+    grid-template-columns: repeat(7, 93px);
+    grid-template-rows: repeat(4, 43px);
+    grid-gap: 7px;
   }
+
+  @media screen and (min-width: $desktop-min) {
+    grid-template-columns: repeat(7, 136px);
+    grid-template-rows: repeat(6, 64px);
+    grid-gap: 7px;
+  }
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+
+  @media screen and (min-width: 1280px) {
+    border-radius: 20px;
+  }
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.gallery__item--2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.gallery__item--3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+.gallery__item--4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery__item--5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  transform: translateY(4px);
+
+  @media screen and (min-width: 1280px) {
+    transform: translateY(13px);
+  }
+}
+
+.gallery__item--7 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  transform: translateY(4px);
+
+  @media screen and (min-width: 1280px) {
+    transform: translateY(13px);
+  }
+}
+
+.gallery__item--8 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  transform: translateY(-5px);
+
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-34px);
+  }
+}
+
+.gallery__item--9 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  transform: translateY(-5px);
+
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-34px);
+  }
+}
+
+.gallery__item--10 {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  transform: translateY(1px);
 }
