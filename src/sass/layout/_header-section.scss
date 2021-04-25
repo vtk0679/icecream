@@ -1,6 +1,7 @@
 .header-section {
     background-color: #FFB8CA;
     margin-bottom: 63.5px;
+    overflow: hidden;
 }
 
 .header-button {
@@ -288,7 +289,13 @@
         padding-bottom: 15px;
     }
     .header-button {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-button__icon {
+        margin-left: 12px;
+        fill: var(--text-color-title);
     }
     .button-burger {
         margin-right: 30px;
