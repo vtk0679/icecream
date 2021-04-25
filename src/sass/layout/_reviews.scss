@@ -108,22 +108,17 @@
   margin-right: 10px;
 }
 
-.reviews__text-box::before {
+.reviews__icon-quotes {
   position: relative;
-
   display: block;
-  content: '';
   width: 54px;
   height: 40px;
-  top: 30px;
-  left: 0px;
-
-  background-image: url('./../images/sprite.svg#quotes');
-  background: #131212;
-  /*background-color: transparent;*/
+  top: 25px;
+  left: -25px;
 
   background-repeat: no-repeat;
-  transform: rotate(-180deg);
+  fill: #e1e1e1;
+  fill-opacity: 0.4;
 }
 
 @media screen and (min-width: $tablet-min) {
@@ -151,6 +146,10 @@
   .reviews__text-box {
     width: 620px;
   }
+
+  .reviews__icon-quotes {
+    left: -10px;
+  }
 }
 @media screen and (min-width: $desktop-min) {
   .reviews__text {
@@ -175,5 +174,9 @@
     padding-bottom: 34px;
     padding-left: 54px;
     padding-right: 54px;
+  }
+
+  .reviews__icon-quotes {
+    left: -30px;
   }
 }
