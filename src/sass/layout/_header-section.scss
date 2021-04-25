@@ -17,11 +17,15 @@
     display: none;
 }
 
+.link-current {
+    color: var(--text-color-title);
+}
+
 .container-header {
     display: flex;
     justify-content: space-between;
     padding-top: 37px;
-    padding-bottom: 84px;
+    padding-bottom: 137px;
 }
 
 .button-section {
@@ -31,6 +35,8 @@
 
 .logo {
     display: flex;
+    width: 199px;
+    height: 50px;
 }
 
 .header-list__item {
@@ -67,112 +73,138 @@
     padding: 0;
 }
 
+.button-burger__icon {
+    fill: var(--background-button);
+}
+
+.container-hero {
+    position: relative;
+}
+
 .hero-title {
-    width: 277px;
+    width: 218px;
     font-family: Titan One;
     font-weight: 400;
     padding-bottom: 25px;
-    font-size: 38px;
-    line-height: 1.16;
+    font-size: 26px;
+    line-height: 1.15;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    z-index: 15;
+    position: relative;
 }
 
 .hero-title__subtitle {
     font-family: Titan One;
     font-weight: 400;
-    font-size: 58px;
-    line-height: 90.5%;
+    font-size: 48px;
+    line-height: 96.5%;
     color: #D41443;
+    text-transform: uppercase;
+    z-index: 999;
 }
 
 .hero-button {
     display: flex;
-    padding-bottom: 56px;
+    padding-bottom: 160px;
+    z-index: 100;
+    position: relative;
 }
 
 .hero-button__product {
-    width: 104px;
-    height: 40px;
+    width: 62.4px;
+    height: 24px;
     border: none;
     background: #D41443;
     border-radius: 20px;
     margin-right: 15px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--main-white-color);
 }
 
 .hero-button__made {
-    width: 138px;
-    height: 40px;
+    width: 82.8px;
+    height: 24px;
     border: none;
     border-radius: 20px;
     background: #FFFFFF;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--text-color-title);
 }
 
 .hero-product {
     display: flex;
-    padding-bottom: 39px;
+    padding-bottom: 28px;
+}
+
+.hero-product {
+    display: none;
 }
 
 .hero-product__milk {
-    width: 188px;
-    height: 191px;
+    width: 124px;
+    height: 126px;
 }
 
 .hero-product-about {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    width: 200px;
+    width: 121px;
 }
 
 .hero-product-about__text {
     font-family: DM Sans;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: #FFFFFF;
-    margin-bottom: 20px;
+    font-size: 8px;
+    line-height: 150%;
+    color: var(--main-white-color);
+    margin-bottom: 7px;
 }
 
 .hero-product-about__arrow {
-    width: 26px;
-    height: 26px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     border: none;
     padding: 0;
 }
 
 .hero-product-about__arrow-svg {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 9px;
     color: var(--background-dots-reviews);
-}
-
-.icecream-image {
-    display: none;
 }
 
 .icecream-image__ice {
     position: absolute;
-    left: 594px;
-    top: 108px;
-}
-
-.icecream-image__tasty {
-    position: absolute;
-    right: 109px;
-    top: 433px;
+    width: 171px;
+    height: 410px;
+    left: 117px;
+    bottom: 0;
+    z-index: 10;
 }
 
 .icecream-image__ellipse {
     position: absolute;
-    top: 52px;
-    right: 257px;
+    bottom: 75px;
+    left: 36px;
     display: block;
     border-radius: 50%;
-    width: 538px;
-    height: 538px;
+    width: 344px;
+    height: 344px;
     background-color: var(--text-color-pink);
+    z-index: 10;
+}
+
+.icecream-image__tasty {
+    display: none;
 }
 
 .hero-cafes {
@@ -180,8 +212,12 @@
     display: flex;
     flex-direction: column;
     width: 72px;
-    right: 115px;
-    top: 156px;
+    right: 35px;
+    bottom: 432px;
+}
+
+.hero-cafes {
+    display: none;
 }
 
 .hero-cafes__number,
@@ -190,9 +226,10 @@
     text-align: right;
     font-family: Titan One;
     font-weight: 400;
-    font-size: 46px;
-    line-height: 53px;
+    font-size: 28px;
+    line-height: 1.14px;
     z-index: 60;
+    padding-bottom: 14px;
     color: var(--text-color-title);
 }
 
@@ -202,8 +239,8 @@
     text-align: right;
     font-family: DM Sans;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 8px;
+    line-height: 1.14;
     color: var(--main-white-color);
 }
 
@@ -212,45 +249,193 @@
     display: flex;
     flex-direction: column;
     width: 92px;
-    right: 115px;
-    top: 251px;
+    right: 35px;
+    bottom: 341px;
+}
+
+.hero-food {
+    display: none;
 }
 
 .hero-cafes__ellipse {
     position: absolute;
-    top: 0;
-    right: -15px;
-    width: 30px;
-    height: 30px;
+    top: -13px;
+    right: -8px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: var(--main-white-color);
 }
 
-.hero-food__ellipse {
-    position: absolute;
-    top: 0;
-    right: -15px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: var(--main-white-color)
-}
-
 @media screen and (min-width: 768px) {
+    .container-header {
+        padding-bottom: 15px;
+    }
     .header-button {
         display: block;
     }
     .button-burger {
         margin-right: 30px;
+        position: relative;
+        z-index: 15;
+    }
+    .hero-title {
+        width: 162px;
+        font-size: 22px;
+        line-height: 1.14;
+        padding-bottom: 20px;
+    }
+    .hero-title__subtitle {
+        font-size: 34px;
+        line-height: 90.5%;
+    }
+    .hero-button {
+        padding-bottom: 20px;
+    }
+    .hero-product {
+        display: flex;
+    }
+    .hero-cafes {
+        display: flex;
+        width: 43px;
+        left: 682px;
+        bottom: 261px;
+    }
+    .hero-food {
+        display: flex;
+        width: 92px;
+        left: 635px;
+        bottom: 205px;
+    }
+    .icecream-image__ice {
+        width: 143px;
+        height: 336px;
+        left: 378px;
+    }
+    .icecream-image__ellipse {
+        bottom: 46px;
+        left: 307px;
+        width: 324px;
+        height: 322px;
+    }
+    .icecream-image__tasty {
+        display: block;
+        width: 168px;
+        height: 133px;
+        position: absolute;
+        left: 566px;
+        bottom: 0;
+        z-index: 15;
     }
 }
 
 @media screen and (min-width: 1280px) {
+    .container-header {
+        padding-bottom: 84px;
+    }
     .header-list {
         display: flex;
         z-index: 50;
     }
     .icecream-image {
         display: block;
+    }
+    .hero-title {
+        width: 277px;
+        font-size: 38px;
+        line-height: 1.16;
+    }
+    .hero-title__subtitle {
+        font-size: 58px;
+        line-height: 90.5%;
+    }
+    .button-burger {
+        display: none;
+    }
+    .hero-button {
+        padding-bottom: 56px;
+    }
+    .hero-button__product {
+        width: 104px;
+        height: 40px;
+        border: none;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+    .hero-button__made {
+        width: 138px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+    .hero-product {
+        padding-bottom: 45px;
+    }
+    .hero-product__milk {
+        width: 188px;
+        height: 191px;
+    }
+    .hero-product-about {
+        width: 200px;
+        margin-left: 30px;
+    }
+    .hero-product-about__text {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 20px;
+    }
+    .hero-product-about__arrow {
+        width: 26px;
+        height: 26px;
+    }
+    .hero-product-about__arrow-svg {
+        width: 12px;
+        height: 12px;
+        color: var(--background-dots-reviews);
+    }
+    .hero-cafes {
+        width: 72px;
+        left: 1006px;
+        top: 0;
+    }
+    .hero-food {
+        display: flex;
+        width: 92px;
+        left: 987px;
+        top: 92px;
+    }
+    .hero-cafes__number,
+    .hero-food__number {
+        font-size: 46px;
+        line-height: 1.15;
+        padding-bottom: 0;
+    }
+    .hero-cafes__text,
+    .hero-food__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+    .hero-cafes__ellipse {
+        top: -5px;
+        right: -16px;
+        width: 30px;
+        height: 30px;
+    }
+    .icecream-image__ice {
+        width: 236px;
+        height: 557px;
+        left: 560px;
+    }
+    .icecream-image__ellipse {
+        bottom: 75px;
+        left: 440px;
+        width: 538px;
+        height: 538px;
+    }
+    .icecream-image__tasty {
+        width: 293px;
+        height: 232px;
+        left: 832px;
     }
 }
