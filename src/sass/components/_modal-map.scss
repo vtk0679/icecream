@@ -63,3 +63,12 @@
     color: var(--main-white-color);
     margin-bottom: 22px;
 }
+
+@media screen and (min-width: $tablet-min) {
+    .burger-modal-section {
+        padding-bottom: 33px;
+    }
+    .header-button-modal {
+        width: 186px;
+    }
+}
