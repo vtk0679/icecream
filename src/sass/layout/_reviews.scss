@@ -121,6 +121,18 @@
   fill-opacity: 0.4;
 }
 
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  background-image: url('./../images/reviews/home.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: transparent;
+}
+
 @media screen and (min-width: $tablet-min) {
   .reviews__text {
     font-size: 14px;

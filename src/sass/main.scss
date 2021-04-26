@@ -5,10 +5,14 @@
 
 @import './vendors/fonts';
 @import './vendors/normalize';
+
 @import './utils/variables';
 @import './utils/visually-hidden';
+
 @import './base/common';
 @import './base/container';
+
+@import './components/btn-scroll-back';
 @import './components/modal-btn';
 @import './components/backdrop';
 @import './components/modal-map';
@@ -17,6 +21,7 @@
 @import './components/modal-button-burger';
 @import './components/modal-button-close';
 @import './components/menu-burger';
+
 @import './layout/header-section';
 @import './layout/products';
 @import './layout/about';
