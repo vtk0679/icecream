@@ -100,12 +100,12 @@
   height: 15px;
   fill: var(--background-icon-reviews-accent);
 }
-.icecream__list {
+.icecream__dots {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-.icecream__item:not(:last-child) {
+.icecream__dot:not(:last-child) {
   margin-right: 5px;
 }
 .icecream__icon {
