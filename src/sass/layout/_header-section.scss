@@ -15,8 +15,11 @@
     50% {
         background: var(--background-button);
     }
-    100% {
+    70% {
         background: var(--text-color-pink);
+    }
+    100% {
+        background: var(--background-pink);
     }
 }
 
