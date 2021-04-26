@@ -139,6 +139,42 @@
     line-height: 2.16;
     text-align: center;
     letter-spacing: 0.04em;
+
+    background-image: -webkit-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29px,
+      #e1e1e1 29px,
+      transparent 30px
+    );
+    background-image: -moz-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29px,
+      #e1e1e1 29px,
+      transparent 30px
+    );
+    background-image: -ms-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29px,
+      #e1e1e1 29px,
+      transparent 30px
+    );
+    background-image: -o-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29px,
+      #e1e1e1 29px,
+      transparent 30px
+    );
+    background-image: repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29px,
+      #e1e1e1 29px,
+      transparent 30px
+    );
   }
 
   .reviews__text-box {
@@ -169,6 +205,42 @@
     line-height: 1.86;
     text-align: center;
     letter-spacing: 0.04em;
+
+    background-image: -webkit-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 28px,
+      #e1e1e1 28px,
+      transparent 29px
+    );
+    background-image: -moz-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 28px,
+      #e1e1e1 28px,
+      transparent 29px
+    );
+    background-image: -ms-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 28px,
+      #e1e1e1 28px,
+      transparent 29px
+    );
+    background-image: -o-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 28px,
+      #e1e1e1 28px,
+      transparent 29px
+    );
+    background-image: repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 28px,
+      #e1e1e1 28px,
+      transparent 29px
+    );
   }
 
   .reviews__contacts {
