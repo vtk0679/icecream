@@ -1,6 +1,5 @@
 .header-section {
     background-color: #FFB8CA;
-    margin-bottom: 63.5px;
     overflow: hidden;
     animation: change-background 4s ease;
 }
@@ -148,6 +147,9 @@
     font-size: 8px;
     line-height: 1.25;
     color: var(--main-white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-button__product:hover {
@@ -165,6 +167,9 @@
     font-size: 8px;
     line-height: 1.25;
     color: var(--text-color-title);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-button__made:hover {

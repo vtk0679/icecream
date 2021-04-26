@@ -64,6 +64,10 @@
     margin-bottom: 22px;
 }
 
+.header-list__item-modal:last-child {
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: $tablet-min) {
     .burger-modal-section {
         padding-bottom: 33px;
