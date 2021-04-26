@@ -18,9 +18,9 @@
     }
 
     @media screen and (min-width: $tablet-min) {
-      top: -10%;
+      top: -5%;
       left: 50%;
-      transform: translate(-50%, 10%);
+      transform: translate(-50%, 5%);
       width: 80%;
       padding: 25px 45px;
     }
@@ -70,7 +70,7 @@
       max-width: 330px;
       margin-top: 20px;
       margin-left: 20px;
-      flex-basis: calc(100% / 3 - 20px);
+      flex-basis: calc(100% / 2 - 20px);
     }
   }
 
@@ -84,6 +84,10 @@
       margin-left: 30px;
       flex-basis: calc(100% / 3 - 30px);
     }
+  }
+
+  &__icon {
+    display: inline-block;
   }
 
   &__subscribe {
