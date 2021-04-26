@@ -10,13 +10,14 @@
     padding: 0;
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--main-white-color);
-    &:hover,
-    &:focus {
-        color: var(--text-color-title);
-        background-color: var(--background-btn);
-    }
+    border: none;
+    background-color: transparent;
+    color: var(--main-white-color);
+    // &:hover,
+    // &:focus {
+    //     color: var(--text-color-title);
+    //     background-color: var(--background-btn);
+    // }
 }
 
 .header-button .modal-button-close {
@@ -42,5 +43,12 @@
     &:focus {
         color: var(--text-color-title);
         background-color: var(--background-btn);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-button-close {
+        left: 182px;
+        top: -45px;
     }
 }
