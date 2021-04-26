@@ -2,6 +2,25 @@
     background-color: #FFB8CA;
     margin-bottom: 63.5px;
     overflow: hidden;
+    animation: change-background 4s ease;
+}
+
+@keyframes change-background {
+    0% {
+        background: var(--background-icon);
+    }
+    20% {
+        background: var(--background-modal);
+    }
+    50% {
+        background: var(--background-button);
+    }
+    70% {
+        background: var(--text-color-pink);
+    }
+    100% {
+        background: var(--background-pink);
+    }
 }
 
 .header-button {
@@ -91,7 +110,7 @@
     text-transform: uppercase;
     font-family: Titan One;
     font-weight: 400;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -206,6 +225,36 @@
     left: 117px;
     bottom: 0;
     z-index: 10;
+    animation-name: Appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+}
+
+@-webkit-keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .icecream-image__ellipse {
@@ -259,7 +308,7 @@
     font-size: 28px;
     line-height: 1.14px;
     z-index: 60;
-    padding-bottom: 14px;
+    margin-bottom: 14px;
     color: var(--text-color-title);
 }
 
@@ -319,7 +368,6 @@
         width: 162px;
         font-size: 22px;
         line-height: 1.14;
-        padding-bottom: 20px;
     }
     .hero-title__subtitle {
         font-size: 34px;
