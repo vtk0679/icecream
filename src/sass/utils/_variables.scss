@@ -26,6 +26,8 @@
   --main-font: 'DM Sans', sans-serif;
   --secondary-font: 'Titan One', cursive;
   --main-letter-spacing: 0.04em;
+
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 $mobile-min: 320px;
