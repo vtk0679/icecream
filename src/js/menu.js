@@ -1,16 +1,15 @@
 
 $(function() {
     
-     $(".header-list-modal li a").click(function() {   
-         $(".menu-burger").toggleClass("is-hidden");
-         $(document.body).removeClass('modal-open');
-    })
-
-	function hideModals(){
+    function hideModals(){
 	    $(document.body).removeClass('modal-open');
         $(".menu-burger").addClass("is-hidden");
     }
-    
+
+     $(".header-list-modal li a").click(function() {   
+         hideModals();
+    })
+
 	$(document).on('click', function(e){
 		if (!(
 		($(e.target).parents('.menu-burger').length)
