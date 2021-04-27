@@ -1,78 +1,78 @@
 .modal {
-    &__burger {
-        display: flex;
-        position: relative;
-        display: block;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 27%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        max-width: 1090px;
+  &__burger {
+    display: flex;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 1090px;
+  }
+  &__title {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: var(--text-color-title);
+    margin-bottom: 26px;
+    @media screen and (min-width: $tablet-min) {
+      font-size: 42px;
+      line-height: 1.15;
     }
-    &__title {
-        font-family: var(--secondary-font);
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: normal;
-        text-transform: uppercase;
-        color: var(--text-color-title);
-        margin-bottom: 26px;
-        @media screen and (min-width: $tablet-min) {
-            font-size: 42px;
-            line-height: 1.15;
-        }
-        @media screen and (min-width: $desktop-min) {
-            font-size: 30px;
-            letter-spacing: 0.04em;
-            line-height: 1.13;
-        }
+    @media screen and (min-width: $desktop-min) {
+      font-size: 30px;
+      letter-spacing: 0.04em;
+      line-height: 1.13;
     }
+  }
 }
 
 .header-button-modal {
-    width: 209px;
-    height: 44px;
-    background: #FFFFFF;
-    border: none;
-    border-radius: 22px;
-    font-family: DM Sans;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.31;
-    color: var(--text-color-title);
-    align-items: center;
-    justify-items: center;
+  width: 209px;
+  height: 44px;
+  background: #ffffff;
+  border: none;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--text-color-title);
+  align-items: center;
+  justify-items: center;
 }
 
 .burger-modal-section {
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .header-list-modal {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .header-list__item-modal {
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    color: var(--main-white-color);
-    margin-bottom: 22px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--main-white-color);
+  margin-bottom: 22px;
 }
 
 .header-list__item-modal:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: $tablet-min) {
-    .burger-modal-section {
-        padding-bottom: 33px;
-    }
-    .header-button-modal {
-        width: 186px;
-    }
+  .burger-modal-section {
+    padding-bottom: 33px;
+  }
+  .header-button-modal {
+    width: 186px;
+  }
 }
