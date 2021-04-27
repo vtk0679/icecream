@@ -1,16 +1,10 @@
 .modal {
   &__burger {
-    display: flex;
     position: relative;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 1090px;
   }
   &__title {
     font-family: var(--secondary-font);
@@ -48,7 +42,7 @@
 }
 
 .burger-modal-section {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .header-list-modal {
@@ -70,9 +64,14 @@
 
 @media screen and (min-width: $tablet-min) {
   .burger-modal-section {
-    padding-bottom: 33px;
+    margin-bottom: 33px;
   }
   .header-button-modal {
     width: 186px;
   }
 }
+
+.header-button__icon {
+  margin-left: 10px;
+}
+

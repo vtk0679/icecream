@@ -1,17 +1,25 @@
 .menu-burger {
+  @media screen and (max-width: $tablet-max) {
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
+    padding: 60px 20px;
     overflow-y: scroll;
     background-color: var(--background-modal);
     max-width: 767px;
-    z-index: 100;
+    z-index: 900;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
-@media screen and (min-width: 768px) {
-    .menu-burger {
-        width: 250px;
-    }
+@media screen and (min-width: $mobile) {
+  .menu-burger {
+    width: 250px;
+  }
 }
