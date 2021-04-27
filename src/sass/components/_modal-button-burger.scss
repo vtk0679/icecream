@@ -1,9 +1,5 @@
 .modal {
   &__burger {
-    position: relative;
-    top: 18%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 80%;
   }
   &__title {
@@ -74,4 +70,3 @@
 .header-button__icon {
   margin-left: 10px;
 }
-
