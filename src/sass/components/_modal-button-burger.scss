@@ -1,6 +1,10 @@
 .modal {
   &__burger {
-    max-width: 1090px;
+    position: relative;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
   }
   &__title {
     font-family: var(--secondary-font);
@@ -70,3 +74,4 @@
 .header-button__icon {
   margin-left: 10px;
 }
+
