@@ -16,9 +16,9 @@
       overflow-y: scroll;
     }
     @media screen and (min-width: $tablet-min) {
-      top: -5%;
+      top: 50%;
       left: 50%;
-      transform: translate(-50%, 5%) scale(1);
+      transform: translate(-50%, -50%) scale(1);
       width: 80%;
       padding: 25px 45px;
     }
