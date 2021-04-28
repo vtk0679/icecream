@@ -12,5 +12,11 @@ $(function() {
 
 	$(".menu-burger__backdrop").on('click', function(e){
 			hideModals();
-	});
+    });
+    
+    $(document).on('keydown',function(event) {
+        if (event.keyCode == 27) {
+            hideModals();
+        }
+    });
 });
