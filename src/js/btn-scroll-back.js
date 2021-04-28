@@ -3,9 +3,9 @@ function backToTOP() {
 
     $(window).on('scroll', () => {
         if ($(this).scrollTop() >= 50) {
-            button.fadeIn();
+            button.css('opacity', '1');
         } else {
-            button.fadeOut();
+            button.css('opacity', '0');
         }
     });
 
