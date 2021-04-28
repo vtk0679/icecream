@@ -171,7 +171,7 @@
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $mobile-max) {
   .products__item:not(:last-child) {
     margin-bottom: 130px;
   }
@@ -179,7 +179,7 @@
     left: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-min) {
   .products {
     padding-top: 61px;
     padding-bottom: 112px;
@@ -215,7 +215,7 @@
     flex-basis: calc((100% - 20px) / 3);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $desktop-min) {
   .products {
     padding-top: 64px;
     padding-bottom: 119px;
